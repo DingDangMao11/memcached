@@ -67,3 +67,10 @@ print(age)
 
 
 ```
+```
+## Memcached是一个高性能的分布式的内存对象缓存系统,连接两台电脑的memcache
+mc = memcache.Client(["127.0.0.1:11211","10.239.53.107:11211"],debug=True)
+
+mc.set_multi({'username':'zhilaio','age':18,'height':180,'contry':'china'})
+
+```
