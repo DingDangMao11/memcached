@@ -49,3 +49,21 @@ set username 0 60 7
 zhiliao
 STORED
 ```
+```
+username = mc.get('username')
+print(username)
+## 删除数据：
+mc.delete('username')
+username = mc.get('username')
+print(username)
+## 自增长,delta表示年龄加10
+mc.incr('age',delta=10)
+age = mc.get('age')
+print(age)
+## 自减少,delta表示年龄减10
+mc.decr('age',delta=10)
+age = mc.get('age')
+print(age)
+
+
+```
